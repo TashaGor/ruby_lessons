@@ -22,21 +22,17 @@ puts "Сумма цикла until равна #{summ_number}"
 puts "Среднее арифметическое равно #{summ_number / num}"
 
 #for 
-i = 0 
 summ_number = 0.0 
-for n in i...num 
+for n in 1...num 
 	summ_number = summ_number + n
-    i += 1
 end
 puts "Сумма цикла for равна #{summ_number}"
 puts "Среднее арифметическое равно #{summ_number / num}"
 
 #each
-i = 0 
 summ_number = 0.0 
-(i...num).each do |n|
-	summ_number = summ_number + n
-    i += 1
-    end
+(1...num).each do |i|
+	summ_number = summ_number + i
+end
 puts "Сумма цикла each равна #{summ_number}"
 puts "Среднее арифметическое равно #{summ_number / num}"
